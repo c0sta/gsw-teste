@@ -6,6 +6,17 @@
 
 }
 
+.App{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("../../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .login-box{
     width: 23%;
@@ -80,6 +91,7 @@
     border: 0;
     background:#009BE4;
     color: #fff;
+    cursor: pointer;
     
 }
 
