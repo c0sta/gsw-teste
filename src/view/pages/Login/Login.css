@@ -10,7 +10,7 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
-    background-image: url("../../assets/background.png");
+    background-image: url("../../assets/login/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -84,7 +84,7 @@
     height: 12%;
 }
 
-.button {
+.button-acessar {
     width: 100%;
     height: 100%;
     border-radius: 6px;

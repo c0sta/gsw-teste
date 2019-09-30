@@ -2,8 +2,8 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
-import logo from '../../assets/logo.png';
-import './style.css';
+import logo from '../../assets/login/logo.png';
+import './Login.css';
 
 
 
@@ -40,7 +40,7 @@ export default function Login(){
                        
                         <div className="login-button">
                             <Link to="/dashboard">
-                                <button className="button">Acessar conta</button>
+                                <button className="button-acessar">Acessar conta</button>
                             </Link>
                         </div>
                         
