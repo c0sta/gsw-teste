@@ -1,9 +1,7 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: #918D8D;
-
-
 }
 
 .App{
@@ -92,7 +90,10 @@
     background:#009BE4;
     color: #fff;
     cursor: pointer;
-    
+    transition: all .3s ease-in-out;
+}
+.button-acessar:hover{
+    transform: scale(0.9);
 }
 
 

@@ -27,6 +27,7 @@
 }
 
 .header-search{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -68,6 +69,13 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.button:hover{
+    opacity: 1;
+    color: #4e4e4e;
 }
 
 .header-extra-buttons{

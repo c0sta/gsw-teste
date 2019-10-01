@@ -1,0 +1,30 @@
+.hours-body{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s;
+    
+}
+.hours-header{
+    width: 100%;
+}
+
+.box-button button{
+    width: 100%;
+    height: 40px;
+    background: #53bc9c;
+    color:#fff;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.box-button button:hover{
+    opacity: 1;
+}
