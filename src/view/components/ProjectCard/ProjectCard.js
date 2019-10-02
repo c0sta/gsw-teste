@@ -42,7 +42,6 @@ export default function ProjectCard(props){
                         </div>
                     
                         <div className="box-date">
-                            <h1>Selecione a data</h1>
                             <DatePicker 
                                 selected={startDate} 
                                 onChange={date => setStartDate(date)}

@@ -90,10 +90,11 @@
     background:#009BE4;
     color: #fff;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    opacity: 0.6;
+    transition: 0.2s;
 }
 .button-acessar:hover{
-    transform: scale(0.9);
+    opacity: 1;
 }
 
 

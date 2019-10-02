@@ -3,5 +3,15 @@
     padding: 10px;
     border: 1px solid rgb(214, 218, 219);
     border-radius: 4px;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.datepicker button{
+    background: transparent;
+    padding: 10px;
+    border: none;
+    
     
 }

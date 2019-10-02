@@ -1,0 +1,10 @@
+.card-projectlist{
+    background: #fff;
+    height: 90%;
+    width: 75%;
+    -webkit-box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    border-radius: 10px;
+
+}

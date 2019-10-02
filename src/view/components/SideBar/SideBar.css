@@ -1,0 +1,60 @@
+.menu-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.menu-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 20%;
+    width: 90%;
+    border-bottom: 2px solid rgba(238,238,238, 0.6)
+}
+
+.perfil-pic{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 100px;
+}
+
+.perfil-name{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    font-size: 18px;
+    justify-content: space-evenly;
+    
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+
+.admin{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: tomato;
+}
+
+.menu-lists{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.menu-main{
+    width: 100%;
+    background: #fff;
+}

@@ -42,14 +42,16 @@ export default class Header extends Component{
                 
                 
                 <div className="header-buttons">
-    
+                    
+
+             
                     <div  className="button-box">
                             <img src={project} alt="create project"></img>
                             <button className="button" onClick={this.props.handleProject}>
                                 Criar Projeto
                             </button>
                     </div>
-                    
+             
                     <div  className="button-box">
                             <img src={user} alt="create user"></img>
                             <button className="button" onClick={this.props.handleUser}>

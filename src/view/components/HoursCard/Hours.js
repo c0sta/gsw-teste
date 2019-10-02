@@ -26,12 +26,11 @@ export default function HoursCard(props){
         
             <div className="hours-body">
                 <div className="hours-header">
-                    <h1><b>Projeto selecionado: </b>Projeto 1</h1>
+                    <h1><b>Projeto selecionado: </b>Projeto Tanby</h1>
                 </div>
                 <div className="datepicker-box">
-                    <h1>Selecione a data</h1>
                     <DatePicker 
-                        selected={startDate} 
+                        selected={startDate}
                         onChange={date => setStartDate(date)}
                     />
                 </div>
