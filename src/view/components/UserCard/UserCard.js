@@ -45,7 +45,7 @@ export default function UserCard(props){
                 
                 </div>
            </div>
-           <div className="box-button" >
+           <div className="box-button" onClick={props.onClickRegisterUser} >
                 <Button text="Cadastrar usuário" />
            </div>
             

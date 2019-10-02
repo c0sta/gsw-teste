@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
 
 import './Hours.css';
-import "react-datepicker/dist/react-datepicker.css";
 
 import Card from '../Card/Card';
-import DatePicker from 'react-datepicker';
+import DatePicker from '../DatePicker/DatePicker';
+import Time from '../Time/Time';
 import Button from '../Button/Button';
 import Alert from '../AlertCard/Alert';
 
@@ -33,24 +33,15 @@ export default function HoursCard(props){
                     <DatePicker 
                         selected={startDate} 
                         onChange={date => setStartDate(date)}
-                        dateFormat="dd/MM/yyyy"
                     />
                 </div>
                 <div className="timepicker-box">
-                    <h1>Informe a quantidade de horas</h1>    
-                    <DatePicker
-                        selected={startDate}
-                        onChange={time => setStartDate(time)}
-                        showTimeSelect
-                        showTimeSelectOnly
-                        timeIntervals={15}
-                        timeCaption="Time"
-                        dateFormat="h:mm aa"
-                    />
+                    <Time />
                 </div>
                 <div className="box-button" onClick={ () => setAlertOpen(true)}>
                     <Button text="Cadastrar horas" />
                 </div>
+                
                 {
                     isAlertOpen? 
                     <Alert 

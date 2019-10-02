@@ -21,9 +21,33 @@ export default function Dashboard(){
                 handleClient={ () => setHoursOpen(!isHoursOpen) }
             />
             
-            {isProjectOpen && <ProjectCard className="center" onClick={ () => setProjectOpen(!isProjectOpen) }/>}
-            {isUserOpen && <UserCard className="center" onClick={ () => setUserOpen(!isUserOpen) }/>}    
-            {isHoursOpen && <HoursCard className='center' onClick={() => setHoursOpen(!isHoursOpen)} />}
+            {
+                isProjectOpen && 
+                <ProjectCard 
+                    className="center" 
+                    onClick={ () => setProjectOpen(!isProjectOpen) }
+                    onClickCreate={ () => setProjectOpen(!isProjectOpen) }
+                />
+            }
+            
+            
+            {
+                isUserOpen && 
+                <UserCard 
+                    className="center" 
+                    onClick={ () => setUserOpen(!isUserOpen) }
+                    onClickRegisterUser={ () => setUserOpen(!isUserOpen) }
+                />
+            }    
+            
+            
+            {
+                isHoursOpen && 
+                <HoursCard 
+                    className='center' 
+                    onClick={() => setHoursOpen(!isHoursOpen)} 
+                />
+            }
     
         </div>
     );
