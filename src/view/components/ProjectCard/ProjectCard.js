@@ -13,11 +13,11 @@ import Card from '../Card/Card';
 import Button from '../Button/Button';
 
 
-export default function ProjectCard(){
+export default function ProjectCard(props){
 
     return(
          
-            <Card title="Criar projeto">
+            <Card title="Criar projeto" onClick={props.onClick}>
                <div className="box-body">
                <div className="box-inputs">
                     <input className="project-input" type="text" placeholder="Nome do projeto"/>           

@@ -8,9 +8,9 @@ import DatePicker from 'react-datepicker';
 import Button from '../Button/Button';
 import Alert from '../AlertCard/Alert';
 
-export default function HoursCard(){
+export default function HoursCard(props){
     
-    const [isOpen, setOpen] = useState(false);
+
     const [isAlertOpen, setAlertOpen] = useState(false);
 
     const [startDate, setStartDate] = useState(new Date());
@@ -18,7 +18,8 @@ export default function HoursCard(){
     return(
         
         <Card 
-        title="Horas trabalhadas"  
+        title="Horas trabalhadas" 
+        onClick={props.onClick}
         >
         
  
@@ -47,10 +48,17 @@ export default function HoursCard(){
                         dateFormat="h:mm aa"
                     />
                 </div>
-                <div className="box-button" >
+                <div className="box-button" onClick={ () => setAlertOpen(true)}>
                     <Button text="Cadastrar horas" />
                 </div>
-                
+                {
+                    isAlertOpen? 
+                    <Alert 
+                    onClickCancel={() => setAlertOpen(!isAlertOpen)}  
+                    onClickConfirm={() => setAlertOpen(!isAlertOpen)}
+                    /> 
+                    : null
+                }
             </div>
         </Card>
     );

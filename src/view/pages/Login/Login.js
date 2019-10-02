@@ -5,11 +5,6 @@ import {Link} from 'react-router-dom';
 import logo from '../../assets/login/logo.png';
 import './Login.css';
 
-
-
-
-
-
 export default function Login(){
 
         return(

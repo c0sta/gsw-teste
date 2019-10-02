@@ -15,16 +15,23 @@ import client from '../../assets/dashboard/add-client.png';
 import './Header.css';
 
 export default class Header extends Component{
+
     render(){
+    
         return(
             <header className="header-box">
     
                 <div className="header-logo">
                     <Link to="/">
+                    
                         <img src={logo} alt="logo" />
+                    
                     </Link>
+
                     <button className="header-sandwich">
+                    
                         <img src={sandwich} alt="sandwich menu"></img>
+                    
                     </button>
                 </div>
     
@@ -49,6 +56,7 @@ export default class Header extends Component{
                                 Cadastrar Usuário
                             </button>
                     </div>
+                    
                     <div  className="button-box">
                         <img src={client} alt="create client"></img>
                         <button className="button" onClick={this.props.handleClient}>

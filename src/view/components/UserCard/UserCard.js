@@ -6,10 +6,10 @@ import './UserCard.css'
 import Button from '../Button/Button.js';
 
 
-export default function UserCard(){
+export default function UserCard(props){
 
     return(
-        <Card title="Cadastrar usuários">
+        <Card title="Cadastrar usuários" onClick={props.onClick}>
            <div className="card-body">
 
                 <div className="inputs">
