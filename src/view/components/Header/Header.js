@@ -44,7 +44,6 @@ export default class Header extends Component{
                 <div className="header-buttons">
                     
 
-             
                     <div  className="button-box">
                             <img src={project} alt="create project"></img>
                             <button className="button" onClick={this.props.handleProject}>

@@ -48,7 +48,12 @@ export default function Dashboard(){
                     </body>
 
                     <footer className="footer">
-                         <h1>Desenvolvido com muito ☕</h1>
+                         <h1> Desenvolvido com muito ☕</h1>
+                         <div className="footer-buttons">
+                            <button>Dashboard</button>
+                            <button>Alterar plano</button>
+                            <button>Ajuda & Suporte</button>
+                        </div>
                     </footer>
                </div>
                 
