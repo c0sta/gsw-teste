@@ -9,10 +9,18 @@
     width: 100%;
     background: #fff;
     height: 25px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.icon-menu{
+    width: 20px;
+    height: 20px;
 }
 
 .menu-child-box{
@@ -25,18 +33,21 @@
 
 .menu-button-box button{
     border: none;
-    background: #fff;
+    background: transparent;
     margin-left: 5px;
     text-align: start;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
+    font-weight: 600;
     width: 80%;
     height: 30px;
     cursor: pointer;
     
 }
 
-.children{
+.menu-button-box:hover{
+    opacity: 1;
+    background: #eee;
     
 }
+

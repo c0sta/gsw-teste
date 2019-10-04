@@ -10,7 +10,7 @@
   }
 
   .box-item-children{
-    background: pink;
+    background: #fff;
     align-self: flex-start;
     width:100%;
      
@@ -19,8 +19,15 @@
   .item-children-button{
     background: #fff;
     padding: 10px;
-    
+    opacity: 0.6;
+    transition: 0.6s;
     border:none;
     cursor: pointer;
     width: 100%; 
+    font-weight: 600;
+  }
+
+  .item-children-button:hover{
+    opacity: 1;
+    
   }
