@@ -38,7 +38,7 @@ export default function Dashboard(){
                    
                     <header className="dash-header-container">
                         <text>Home / Dashboard</text>
-                        <h1>Olá Gabriel, bem vindo! </h1>
+                        <h1>Olá José, bem vindo! </h1>
                         <h3>Veja o andamento de seus projetos</h3>
                     </header>
                     
@@ -48,7 +48,7 @@ export default function Dashboard(){
                     </body>
 
                     <footer className="footer">
-                         <h1>Desenvolvido com muito café e maconha</h1>
+                         <h1>Desenvolvido com muito ☕</h1>
                     </footer>
                </div>
                 

@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column; 
     align-items: center;
+    
 }
 
 .menu-perfil{
@@ -11,15 +12,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
+    background: #fff;
     height: 20%;
-    width: 90%;
+    width: 95%;
     border-bottom: 2px solid rgba(238,238,238, 0.6)
 }
 
 .perfil-pic{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border: none;
     border-radius: 100px;
 }
@@ -51,10 +52,10 @@
 .menu-lists{
     width: 100%;
     height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
     
+    justify-content: flex-start;
 }
 
-.menu-main{
-    width: 100%;
-    background: #fff;
-}

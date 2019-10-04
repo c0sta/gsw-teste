@@ -21,8 +21,9 @@
     height: 75%;
     border-radius: 8px;
     background: white;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.35);
-
+    -webkit-box-shadow: 0px 24px 39px -19px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 24px 39px -19px rgba(0,0,0,1);
+    box-shadow: 0px 24px 39px -19px rgba(0,0,0,1);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,8 +38,8 @@
     font-weight: 200;
 }
 .header-img{
-    width:230px;
-    height: 200px;
+    width:180px;
+    height: 160px;
 }
 
 .login-inputs{

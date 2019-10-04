@@ -12,7 +12,38 @@ import './SideBar.css';
  
 export default function SidebarExample() {
 
-    const menu=[
+    
+  return (
+  
+ 
+      <div className="menu-box">
+
+        <div className="menu-perfil">
+
+            <img src={perfil} alt="foto de perfil" className="perfil-pic"></img>   
+
+            <div className="perfil-name">
+                <text className="admin">Dashboard Admin</text>
+                <text className="name">José da Silva</text>
+            </div> 
+            <button className="icon">
+            <img src={arrowDownDark} alt="icone arrow down" className="icon"></img>
+            </button>
+            
+        </div>
+        <div className="menu-lists">
+            <Menu/>
+        </div>
+          
+      </div>
+    
+  );
+}
+
+
+/**
+ * 
+ * const menu=[
 
 
         {
@@ -95,36 +126,4 @@ export default function SidebarExample() {
             to: '#sair',
         },  
     ];
-  return (
-  
- 
-      <div className="menu-box">
-
-        <div className="menu-perfil">
-
-            <img src={perfil} alt="foto de perfil" className="perfil-pic"></img>   
-
-            <div className="perfil-name">
-                <text className="admin">Dashboard Admin</text>
-                <text className="name">José da Silva</text>
-            </div> 
-            <button className="icon">
-            <img src={arrowDownDark} alt="icone arrow down" className="icon"></img>
-            </button>
-            
-        </div>
-        <div className="menu-lists">
-            <Menu 
-                content={menu}  
-                className="menu-main"
-                classNameItem="menu-item"
-                
-           
-           
-           />
-        </div>
-          
-      </div>
-    
-  );
-}
+ */
