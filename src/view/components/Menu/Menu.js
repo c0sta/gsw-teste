@@ -1,7 +1,7 @@
 import React from 'react';
 
-import MenuButton from './MenuButton.jsx';
-import MenuChildren from './MenuChildren.js';
+import MenuButton from './MenuButton.js';
+//import MenuChildren from './MenuChildren.js';
 
 import './Menu.css';
 import dashboardIcon from "../../assets/menu/dashboard-icon.png";
@@ -82,7 +82,19 @@ export default function MenuBar(){
     return (
       <div className="box-menu">
           {
-            items.map( item => <MenuButton name={item.name} src={item.src} />)
+            items.map( item => (
+            <MenuButton name={item.name} src={item.src} >
+              {
+                item.children? item.children.map( children => (
+               
+               <div className="box-item-children">
+                  <button className="item-children-button">{children.name}</button>
+                </div>
+
+                )):null
+              }
+            </MenuButton>  
+              ))
           }
       </div>
     )

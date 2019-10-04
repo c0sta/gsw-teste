@@ -8,3 +8,19 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  .box-item-children{
+    background: pink;
+    align-self: flex-start;
+    width:100%;
+     
+  }
+
+  .item-children-button{
+    background: #fff;
+    padding: 10px;
+    
+    border:none;
+    cursor: pointer;
+    width: 100%; 
+  }
