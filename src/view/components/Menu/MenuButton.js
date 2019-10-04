@@ -1,9 +1,10 @@
 import React from 'react';
 import './MenuButton.css';
+import {Link} from 'react-router-dom';
 
 
 const MenuButton = (props) => (
-    <div className="menu-box">
+    <Link to={props.to} className="menu-box">
       <div className="menu-button-box">
         <img src={props.src} alt="icon"/>
         <button >{props.name}</button>
@@ -14,7 +15,7 @@ const MenuButton = (props) => (
         {props.children}  
       </div>
       
-    </div>
+    </Link>
 );
 
 export default MenuButton;

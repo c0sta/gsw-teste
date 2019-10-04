@@ -24,9 +24,10 @@ export default function MenuBar(){
     { 
       "name": "Cadastros",
       "src": cadastrosIcon,
+      "to": "/dashboard",
       "children": [
         {
-          "name": "Usuários"
+          "name": "Usuários",
         },
         {
           "name": "Clientes"
@@ -36,6 +37,7 @@ export default function MenuBar(){
     {
       "name": "Projetos",
       "src": projetosIcon,
+      "to": "/dashboard",
       "children": [
         {
           "name": "Criar projetos"
@@ -51,6 +53,7 @@ export default function MenuBar(){
     {
       "name": "Meu Perfil",
       "src": perfilIcon,
+      "to": "#",
       "children": [
         {
           "name": "Trocar senha"
@@ -63,7 +66,7 @@ export default function MenuBar(){
     {
       "name": "Ver registro de horas",
       "src": registroIcon,
-      "to": "#"
+      "to": "/dashboard"
     },
     {
       "name": "Configurações",
@@ -75,7 +78,7 @@ export default function MenuBar(){
     {
       "name": "Sair do sistema",
       "src": sairIcon,
-      "to": "#"
+      "to": "/"
     },
   ]
 
@@ -83,7 +86,7 @@ export default function MenuBar(){
       <div className="box-menu">
           {
             items.map( item => (
-            <MenuButton name={item.name} src={item.src} >
+            <MenuButton name={item.name} src={item.src} to={item.to}>
               {
                 item.children? item.children.map( children => (
                
