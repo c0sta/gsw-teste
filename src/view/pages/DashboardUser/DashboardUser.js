@@ -38,8 +38,6 @@ export default function Dashboard(){
                    
                     <header className="dash-header-container">
                         <text>Home / Dashboard</text>
-                        <h1>Olá José, bem vindo! </h1>
-                        <h3>Veja o andamento de seus projetos</h3>
                     </header>
                     
                     <body className="dash-body-container">

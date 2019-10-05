@@ -66,7 +66,7 @@ export default function MenuBar(props){
       ]
     },
     {
-      "name": "Ver registro de horas",
+      "name": "Horas registradas",
       "src": registroIcon,
       "to": "/dashboard"
     },
