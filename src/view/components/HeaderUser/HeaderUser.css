@@ -1,0 +1,92 @@
+
+.header-box{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 65px;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 38px -18px rgba(0,0,0,0.25);
+    
+    position: fixed;
+
+    box-shadow: 0px 3px 15px rgba(100,100,100,0.20);
+
+}
+
+.header-logo{
+    width: 15%;
+    /*background: blue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-sandwich{
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.header-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    border: 1px solid rgb(214, 218, 219);
+    border-radius: 25px;
+
+}
+.header-search input{
+    border: none;
+    background: transparent;
+    height: 100%;
+    width: 85%;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+
+}
+
+.button{
+    text-indent: 10px;
+    color: #767676;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.button:hover{
+    opacity: 1;
+    color: #4e4e4e;
+}
+
+.header-extra-buttons{
+    flex-direction: row;
+    display: flex;
+}

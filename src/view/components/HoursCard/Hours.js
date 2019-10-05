@@ -12,7 +12,6 @@ export default function HoursCard(props){
     
 
     const [isAlertOpen, setAlertOpen] = useState(false);
-
     const [startDate, setStartDate] = useState(new Date());
   
     return(

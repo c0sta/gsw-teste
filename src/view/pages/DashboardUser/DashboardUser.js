@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
 
 //COMPONENTS
-import Header from '../../components/Header/Header';
+import HeaderUser from '../../components/HeaderUser/HeaderUser';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import UserCard from '../../components/UserCard/UserCard';
 import HoursCard from '../../components/HoursCard/Hours';
-import ProjectList from '../../components/ProjectList/ProjectList';
-import SideBar from '../../components/SideBar/SideBar';
+import ProjectList from '../../components/ProjectListUser/ProjectListUser';
+import SideBar from '../../components/SideBarUser/SideBarUser';
 //ASSETS
+import ApontamentoHoras from '../../components/ApontamentoHoras/ApontamentoHoras';
+import DatePicker from 'react-datepicker';
 import './DashboardUser.css';
 
 export default function Dashboard(){
@@ -19,12 +21,7 @@ export default function Dashboard(){
    
     return(
         <div className="dashboard-box">
-            <Header 
-                  
-                   handleProject={ ()=> setProjectOpen(!isProjectOpen) } 
-                   handleUser={ () => setUserOpen(!isUserOpen)}
-                   handleClient={ () => setHoursOpen(!isHoursOpen) }
-            />
+            <HeaderUser/>
                 
             <div className="dashboard-body">
 
@@ -37,12 +34,17 @@ export default function Dashboard(){
                <div className="dash-container">
                    
                     <header className="dash-header-container">
-                        <text>Home / Dashboard</text>
+                        <text className="home-text">Home / Dashboard</text>
+                        <div className="welcome-user">
+                            <text className="welcome-text">Olá Einstein da Silva, bem vindo!</text>
+                            <text className="welcome-subtext">Veja o andamento dos projetos</text>
+                        </div>
+                        
                     </header>
                     
                     <body className="dash-body-container">
                         <ProjectList />
-                    
+                        <ApontamentoHoras />
                     </body>
 
                     <footer className="footer">
