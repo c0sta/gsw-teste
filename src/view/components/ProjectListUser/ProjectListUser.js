@@ -49,7 +49,6 @@ export default function ProjectList(){
                             <Item 
                                 key={projeto.id} 
                                 descricao={projeto.descricao} 
-                                hours_add={ () => setHoursOpen(!isHoursOpen)} 
                                 onClick={ () => setOpen(!isOpen)} 
                                 criadoPor={projeto.criadoPor} 
                                 projeto={projeto.projeto} 
