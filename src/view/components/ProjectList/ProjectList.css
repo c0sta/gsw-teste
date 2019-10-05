@@ -1,12 +1,12 @@
 .card-projectlist{
     background: #fff;
-    height: 90%;
-    width: 75%;
+    height: auto;
+    width: 95%;
     -webkit-box-shadow: 1px 1px 38px -10px rgba(0,0,0,0.25);
     -moz-box-shadow: 1px 1px 38px -10px rgba(0,0,0,0.25);
     box-shadow: 1px 1px 38px -10px rgba(0,0,0,0.25);
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
 }
 
 
@@ -17,5 +17,5 @@
 
 .item{
     width: 100%;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
