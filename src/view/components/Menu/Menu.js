@@ -1,7 +1,6 @@
 import React from 'react';
 
 import MenuButton from './MenuButton.js';
-//import MenuChildren from './MenuChildren.js';
 
 import './Menu.css';
 import dashboardIcon from "../../assets/menu/dashboard-icon.png";
@@ -11,9 +10,12 @@ import perfilIcon from "../../assets/menu/perfil-icon.png";
 import registroIcon from "../../assets/menu/registro-horas-icon.png";
 import configuracoesIcon from "../../assets/menu/configuracoes-icon.png";
 import sairIcon from "../../assets/menu/sair-icon.png";
+import first from '../../assets/menu/first.png';
 
 
-export default function MenuBar(){
+
+
+export default function MenuBar(props){
 
   const items =[
     {
@@ -87,15 +89,26 @@ export default function MenuBar(){
           {
             items.map( item => (
             <MenuButton name={item.name} src={item.src} to={item.to}>
+              
               {
                 item.children? item.children.map( children => (
                
                <div className="box-item-children">
-                  <button className="item-children-button">{children.name}</button>
+                 
+                 <div className="child-column">
+                   
+                    <img src={first} alt="column icon" className="child-column-icon"/>
+                  </div>
+
+                  <div className="child-buttons">
+                    <button className="item-children-button">{children.name}</button>
+                  </div>
+                  
                 </div>
 
                 )):null
-              }
+                }
+            
             </MenuButton>  
               ))
           }

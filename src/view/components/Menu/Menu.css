@@ -12,9 +12,12 @@
   .box-item-children{
     background: #fff;
     align-self: flex-start;
+    display: flex;
+    flex-direction: row;
     width:100%;
-     
+    
   }
+
 
   .item-children-button{
     background: #fff;
@@ -23,11 +26,26 @@
     transition: 0.6s;
     border:none;
     cursor: pointer;
-    width: 100%; 
+    width: 100%;
     font-weight: 600;
-  }
 
-  .item-children-button:hover{
+  }
+.child-buttons{
+  width: 100%;
+  
+}
+.child-column{
+  width: 15px;
+  height: 10px;
+}
+.child-buttons button{
+  text-align: start;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+  .child-buttons:hover{
     opacity: 1;
+    background: #eee;
     
   }
