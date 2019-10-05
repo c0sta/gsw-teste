@@ -21,12 +21,12 @@ export default function MenuBar(props){
     {
       "name": "Dashboard",
       "src": dashboardIcon,
-      "to": "#"
+      "to": "/dashboard-user"
     },
     { 
       "name": "Cadastros",
       "src": cadastrosIcon,
-      "to": "/dashboard",
+      "to": "/dashboard-admin",
       "children": [
         {
           "name": "Usuários",
@@ -39,7 +39,7 @@ export default function MenuBar(props){
     {
       "name": "Projetos",
       "src": projetosIcon,
-      "to": "/dashboard",
+      "to": "/dashboard-admin",
       "children": [
         {
           "name": "Criar projetos"
@@ -68,7 +68,7 @@ export default function MenuBar(props){
     {
       "name": "Horas registradas",
       "src": registroIcon,
-      "to": "/dashboard"
+      "to": "/dashboard-user"
     },
     {
       "name": "Configurações",

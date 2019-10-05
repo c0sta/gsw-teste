@@ -1,23 +1,26 @@
 .item-box{
     width: 100%;
     height: 90px;
-    border: 1px solid lightgray;
+   border-bottom: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    margin-bottom: 1em;
-    transition: 0.3s;
+
+    margin-bottom: 10px;
 }
-.item-box:hover {
-    box-shadow: 0 3px 3px #eee, 0 3px 6px#eee;
-    cursor: pointer;
-  }
+
 .box-left{
     display: flex;
     flex-direction: row;
 }
+.clock-icon{
+    width: 15px;
+    height: 15px;
+}
+
+
 .box-right{
     width: 20%;
 }
@@ -26,17 +29,57 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
-.item-box img{
+.perfil-img{
     width: 50px;
     height: 50px;
 }
+.horas-dedicadas{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.horas-faltantes{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
 .item-texts{
     display: flex;
     flex-direction: column;
     height: 70px;  
     justify-content: space-evenly;
     margin-left: 10px;   
+}
+
+.item-texts img{
+    width: 15px;
+    height: 15px;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.item-header{
+    flex-direction: row;
+    display: flex;
+
+}
+.list-colapsible    {
+width: 100%;
+padding: 5px;
+border-radius: 5px;
+margin-bottom: 1em;
+transition: 0.3s;
 }

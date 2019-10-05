@@ -34,7 +34,7 @@ export default function Login(){
                         </div>
                        
                         <div className="login-button">
-                            <Link to="/dashboard">
+                            <Link to="/dashboard-admin">
                                 <button className="button-acessar">Acessar conta</button>
                             </Link>
                         </div>

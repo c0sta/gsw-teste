@@ -4,7 +4,6 @@ import React, {useState} from 'react';
 import Header from '../../components/Header/Header';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import UserCard from '../../components/UserCard/UserCard';
-import HoursCard from '../../components/HoursCard/Hours';
 import ProjectList from '../../components/ProjectList/ProjectList';
 import SideBar from '../../components/SideBar/SideBar';
 //ASSETS
@@ -14,7 +13,6 @@ export default function Dashboard(){
 
     const [isProjectOpen, setProjectOpen] =  useState(false);
     const [isUserOpen, setUserOpen] = useState(false);
-    const [isHoursOpen, setHoursOpen] = useState(false);
    
    
     return(
@@ -23,7 +21,6 @@ export default function Dashboard(){
                   
                    handleProject={ ()=> setProjectOpen(!isProjectOpen) } 
                    handleUser={ () => setUserOpen(!isUserOpen)}
-                   handleClient={ () => setHoursOpen(!isHoursOpen) }
             />
                 
             <div className="dashboard-body">
@@ -77,15 +74,7 @@ export default function Dashboard(){
                 />
             }    
             
-            
-            {
-                isHoursOpen && 
-                <HoursCard 
-                    className='center' 
-                    onClick={() => setHoursOpen(!isHoursOpen)} 
-                />
-            }
-            
+    
             
     
         </div>

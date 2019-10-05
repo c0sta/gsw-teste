@@ -7,8 +7,64 @@
     -moz-box-shadow: 1px 1px 38px -10px rgba(0,0,0,0.25);
     box-shadow: 1px 1px 38px -10px rgba(0,0,0,0.25);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.list-item:hover {
+    box-shadow: 0 3px 3px #eee, 0 3px 6px lightgray;
+    cursor: pointer;
+  }
+.empty{
+    font-size: 2em;
+    color: #444;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
 }
 
+.item-obs-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;   
+}
+
+.item-obs-right{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.item-obs-body{
+    height: auto;
+    padding: 10px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.item-body-right{
+    width: 50%;
+    height: auto;
+}
+.item-body-left{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .list-header{
     height: 60px;
     padding: 10px;
@@ -32,11 +88,11 @@
 .list-filter{
     height: 40px;
     width: 25%;
-    border-bottom: 1px solid lightgray; 
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    border-bottom: 1px solid lightgray;
 }
 .list-filter input{
     border: none;
@@ -53,5 +109,10 @@
 
 .list-item{
     width: 100%;
-    margin-bottom: 5px;
+    border-radius: 5px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    margin-bottom: 10px;
 }

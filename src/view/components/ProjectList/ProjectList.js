@@ -45,23 +45,37 @@ export default function ProjectList(){
                     { data.map( projeto => (
                         <div className="list-item">
                         
-                            <Item key={projeto.id} onClick={ () => setOpen(!isOpen)} criadoPor={projeto.criadoPor} projeto={projeto.projeto} entrega={projeto.entrega} horas_dedicadas={projeto.horas_dedicadas} horas_faltantes={projeto.horas_faltantes}/>
-                        
+                            <Item key={projeto.id} descricao={projeto.descricao} onClick={ () => setOpen(!isOpen)} criadoPor={projeto.criadoPor} projeto={projeto.projeto} entrega={projeto.entrega} horas_dedicadas={projeto.horas_dedicadas} horas_faltantes={projeto.horas_faltantes}/>
+
                             {isOpen? (
                                 <div className="list-colapsible">
+                                <header className="item-obs-header">
+
+                                    <div className="item-obs-left">
+                                        <text>Observações</text>
+                                    </div>
+
+                                    <div className="item-obs-right">
+                                        <text>Data</text>
+                                        <text>Horas trabalhadas</text>
+                                    </div>
+
+                                </header>   
                                 {projeto.observacoes.map(
                                         comment => (
-                                            <div className="item-obs">
-                                                <header className="item-obs-header">
-                                                    <text>Observações</text>
-                                                    <text>Data</text>
-                                                    <text>Horas trabalhadas</text>
-                                                </header>
+                                            
                                                 <div className="item-obs-body">
-                                                    <text>Observações</text>
-                                                    <text>Data</text>
+                                                    <div className="item-body-right">
+                                                        <text>{comment.msg}</text>
+                                                    </div>
+
+                                                    <div className="item-body-left">
+                                                        <text>{comment.data}</text>
+                                                        <text>{comment.horas_dedicadas} h</text>
+                                                    </div>
+                                                    
                                                 </div>
-                                            </div>
+                        
                                         )
                                     )}        
                                 </div>

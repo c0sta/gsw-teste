@@ -8,7 +8,7 @@ import HoursCard from '../../components/HoursCard/Hours';
 import ProjectList from '../../components/ProjectList/ProjectList';
 import SideBar from '../../components/SideBar/SideBar';
 //ASSETS
-import './Dashboard.css';
+import './DashboardUser.css';
 
 export default function Dashboard(){
 
