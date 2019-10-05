@@ -45,7 +45,16 @@ export default function ProjectList(){
                     { data.map( projeto => (
                         <div className="list-item">
                         
-                            <Item key={projeto.id} descricao={projeto.descricao} onClick={ () => setOpen(!isOpen)} criadoPor={projeto.criadoPor} projeto={projeto.projeto} entrega={projeto.entrega} horas_dedicadas={projeto.horas_dedicadas} horas_faltantes={projeto.horas_faltantes}/>
+                            <Item 
+                            key={projeto.id} 
+                            descricao={projeto.descricao} 
+                            onClick={ () => setOpen(!isOpen)} 
+                            criadoPor={projeto.criadoPor} 
+                            projeto={projeto.projeto} 
+                            entrega={projeto.entrega} 
+                            horas_dedicadas={projeto.horas_dedicadas} 
+                            horas_faltantes={projeto.horas_faltantes}
+                            />
 
                             {isOpen? (
                                 <div className="list-colapsible">

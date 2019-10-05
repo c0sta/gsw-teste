@@ -50,7 +50,7 @@ export default function ProjectList(){
                                 key={projeto.id} 
                                 descricao={projeto.descricao} 
                                 hours_add={ () => setHoursOpen(!isHoursOpen)} 
-                                onClick={ () => setHoursOpen(!isHoursOpen)} 
+                                onClick={ () => setOpen(!isOpen)} 
                                 criadoPor={projeto.criadoPor} 
                                 projeto={projeto.projeto} 
                                 entrega={projeto.entrega} 

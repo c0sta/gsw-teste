@@ -8,7 +8,7 @@ import Time from '../Time/Time';
 import Button from '../Button/Button';
 import Alert from '../AlertCard/Alert';
 
-export default function HoursCard(props){
+export default function Hours(props){
     
 
     const [isAlertOpen, setAlertOpen] = useState(false);

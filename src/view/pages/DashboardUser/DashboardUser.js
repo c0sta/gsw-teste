@@ -2,20 +2,15 @@ import React, {useState} from 'react';
 
 //COMPONENTS
 import HeaderUser from '../../components/HeaderUser/HeaderUser';
-import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import UserCard from '../../components/UserCard/UserCard';
 import HoursCard from '../../components/HoursCard/Hours';
 import ProjectList from '../../components/ProjectListUser/ProjectListUser';
 import SideBar from '../../components/SideBarUser/SideBarUser';
 //ASSETS
 import ApontamentoHoras from '../../components/ApontamentoHoras/ApontamentoHoras';
-import DatePicker from 'react-datepicker';
 import './DashboardUser.css';
 
 export default function Dashboard(){
 
-    const [isProjectOpen, setProjectOpen] =  useState(false);
-    const [isUserOpen, setUserOpen] = useState(false);
     const [isHoursOpen, setHoursOpen] = useState(false);
    
    
@@ -56,39 +51,17 @@ export default function Dashboard(){
                         </div>
                     </footer>
                </div>
-                
-            </div>
-
-            
-            {
-                isProjectOpen && 
-                <ProjectCard 
-                    className="center" 
-                    onClick={ () => setProjectOpen(!isProjectOpen) }
-                    onClickCreate={ () => setProjectOpen(!isProjectOpen) }
-                />
-            }
-            
-            
-            {
-                isUserOpen && 
-                <UserCard 
-                    className="center" 
-                    onClick={ () => setUserOpen(!isUserOpen) }
-                    onClickRegisterUser={ () => setUserOpen(!isUserOpen) }
-                />
-            }    
-            
-            
-            {
-                isHoursOpen && 
+               {
+                isHoursOpen &&
                 <HoursCard 
                     className='center' 
-                    onClick={() => setHoursOpen(!isHoursOpen)} 
+                    onClick={ () => setHoursOpen(!isHoursOpen)} 
+                    
                 />
             }
             
             
+            </div>
     
         </div>
     );
