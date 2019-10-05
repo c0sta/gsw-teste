@@ -7,5 +7,5 @@ Executar ```npm install``` na pasta raiz do projeto
 #### Executando
 Executar ```yarn start``` na pasta raiz do projeto
 
-Abrir [localhost:3000](localhost:3000)
+Abrir [localhost:3000](https://localhost:3000)
 
