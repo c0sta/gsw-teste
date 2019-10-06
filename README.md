@@ -1,7 +1,6 @@
-# Teste para vaga de estágio na GSW
+# Teste para vaga de estágiario na GSW
 
 ## Getting Started
-
 * API -[MockApi](http://5d9236ec741bd40014116b43.mockapi.io/projetos)
 
 ## Instruções
