@@ -17,7 +17,6 @@ import Time from '../Time/Time';
 export default function ProjectCard(props){
 
     const [startDate, setStartDate] = useState(new Date());
-    const [projeto, setProjeto] = useState({});
     
     return(
          

@@ -9,9 +9,6 @@ import lupa from '../../assets/dashboard/lupa.png';
 import settings from '../../assets/dashboard/settings.png';
 import resize from '../../assets/dashboard/resize.png';
 import sandwich from '../../assets/dashboard/sandwich.png';
-import project from '../../assets/dashboard/add-project.png';
-import user from '../../assets/dashboard/add-user.png';
-import client from '../../assets/dashboard/add-client.png';
 import './HeaderUser.css';
 
 export default class Header extends Component{

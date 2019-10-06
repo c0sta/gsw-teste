@@ -1,0 +1,46 @@
+.card-body{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.inputs{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly
+}
+
+.inputs input {
+        border: 1px solid rgb(214, 218, 219);
+        border-radius: 10px;
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+}
+
+
+
+.box-button button{
+    width: 100%;
+    height: 50px;
+    background: #53bc9c;
+    color:#fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.box-button button:hover{
+    opacity: 1;
+}

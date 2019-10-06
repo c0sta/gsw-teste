@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import clock from '../../assets/dashboard/clock.png';
 import calendar from '../../assets/dashboard/calendar.png';
 

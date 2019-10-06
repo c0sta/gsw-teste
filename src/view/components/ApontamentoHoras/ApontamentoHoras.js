@@ -9,7 +9,7 @@ const ApontamentoHoras = () => (
             <div className="box-header">
                 <h1>Apontamento de Horas</h1>
                 <div style={{display: "flex", flexDirection: "row", margin:"3px"}}>
-                    <img src={calendar}/> 
+                    <img src={calendar} alt="calendar icon"/> 
                     <h3>03 a 07 julho</h3>   
                 </div>     
             </div>
@@ -20,7 +20,7 @@ const ApontamentoHoras = () => (
                     day => (
                     <div className="days" >
                         <text className="text-day">{day}</text>
-                        <text className="text-hour">0h</text>
+                        <text className="text-hour">2h</text>
                     </div>
                     )
                 )}    

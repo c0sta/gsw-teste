@@ -4,7 +4,8 @@ import Item from '../ItemListUser/ItemListUser.js';
 import api from '../../../services/api.js';
 import HoursCard from '../HoursCard/Hours';
 import filter from '../../assets/dashboard/filter.png';
-import arrowDown from '../../assets/dashboard/arrow-down-light.png';
+import cooffe from '../../assets/dashboard/coffee.png'
+
 
 export default function ProjectList(){
 
@@ -32,7 +33,7 @@ export default function ProjectList(){
                 <div className="list-filter">
                     <img src={filter} alt="icon filter"/>
                     <input type="search" placeholder="Projetos"/>
-                    <img src={arrowDown} alt="icon arrown down"/>
+                    
                 </div>
                 <div className="list-horas">
                     <text>Horas lançadas</text>
@@ -96,8 +97,8 @@ export default function ProjectList(){
                 ))}
                 </ul>  
                 ) : (
-                    <div className="empty">
-                        Acabaram os projetos :'( Time to chill <span role="img">☕</span>
+                    <div className="empty" style={{color: "#999", fontWeight:"200"}}>
+                        Acabaram os projetos :'(  <br/>Time to chill <img src={cooffe} style={{width: "35px", height: "35px"}} alt="coffe icon"/>
                     </div>
                 ) }
             </div>

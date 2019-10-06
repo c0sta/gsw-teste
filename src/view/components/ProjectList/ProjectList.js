@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './ProjectList.css';
 import Item from '../ItemList/ItemList.js';
 import api from '../../../services/api.js';
-
+import cooffe from '../../assets/dashboard/coffee.png'
 import filter from '../../assets/dashboard/filter.png';
 import arrowDown from '../../assets/dashboard/arrow-down-light.png';
 
@@ -95,8 +95,8 @@ export default function ProjectList(){
                 ))}
                 </ul>  
                 ) : (
-                    <div className="empty">
-                        Acabaram os projetos :'( <br/> Time to chill <span role="img">☕</span>
+                    <div className="empty" style={{color: "#999", fontWeight:"200"}}>
+                        Acabaram os projetos :'(  <br/>Time to chill <img src={cooffe} style={{width: "35px", height: "35px"}} alt="coffe icon"/>
                     </div>
                 ) }
             </div>
