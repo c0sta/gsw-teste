@@ -48,7 +48,6 @@
     display: flex;
     width: 90%;
     height: 25%;
-    /*background: red;*/
 }
 .input{
     height: 50px;
@@ -59,7 +58,6 @@
 }
 
 .login-footer{
-    /*background: green;*/
     width: 90%;
     height: 30px;
     display: flex;
